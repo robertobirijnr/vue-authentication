@@ -1,4 +1,5 @@
 import Vue from 'vue'
+import '../assets/style.css'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 
