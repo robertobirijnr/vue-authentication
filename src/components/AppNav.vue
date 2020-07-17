@@ -1,16 +1,13 @@
 <template>
   <div id="nav">
-    <router-link to="/">
-      Home
-    </router-link>
-    <router-link to="/dashboard">
-      Dashboard
-    </router-link>
+    <router-link to="/">Home</router-link>
+    <router-link to="/dashboard">Dashboard</router-link>
+    <router-link to="/login" class="button">Login</router-link>
   </div>
 </template>
 
 <script>
-export default {}
+export default {};
 </script>
 
 <style scoped>
@@ -46,8 +43,8 @@ button,
   color: #2c3e50;
 }
 .router-link-active {
-    color: #2c3e50;
-  }
+  color: #2c3e50;
+}
 .logoutButton {
   cursor: pointer;
 }
