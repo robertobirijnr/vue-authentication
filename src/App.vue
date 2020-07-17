@@ -6,7 +6,9 @@
 </template>
 
 <script>
+import './assets/style.css'
 import AppNav from './components/AppNav'
+
 export default {
   components: { AppNav }
 }
