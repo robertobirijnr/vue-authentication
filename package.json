@@ -3,14 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "start": "concurrently \"npm run serve\" \"npm run api\"",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "start": "nodemon server.js & vue-cli-service serve"
+    "api": "nodemon server.js"
   },
   "dependencies": {
     "axios": "^0.19.2",
     "body-parser": "^1.19.0",
+    "concurrently": "^5.2.0",
     "core-js": "^3.6.5",
     "cors": "^2.8.5",
     "express": "^4.17.1",
