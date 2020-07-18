@@ -19,6 +19,9 @@ export default new Vuex.Store({
     CLEAR_USER_DATA (){
       localStorage.removeItem('user')
       location.reload()
+      // setTimeout(function(){
+      //   window.location.reload();
+      // });
     }
   },
   actions: {
@@ -43,11 +46,12 @@ export default new Vuex.Store({
           commit('SET_USER_DATA', data)
         }
       )
-    }
+    },
+    logout({commit}){
+      commit('CLEAR_USER_DATA')
+    },
   },
-  logout({commit}){
-    commit('CLEAR_USER_DATA')
-  },
+ 
   getters:{
     loggedIn (state){
       return !!state.user
